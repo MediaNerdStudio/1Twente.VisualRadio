@@ -1,0 +1,253 @@
+.news {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  opacity: 0;
+}
+.bg[data-type="news"] {
+  /* opacity: 0.5; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 34, 47, 1) 0%,
+    rgba(58, 68, 77, 1) 50%,
+    rgba(20, 34, 47, 1) 100%
+  );
+  overflow: hidden;
+  /* z-index: 1; */
+}
+
+.bg[data-type="news"] .texture {
+  /* opacity: 0.5; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/1T.BG.Gradient.01.png");
+  background-size: cover;
+  /* background-color: hsla(208, 23%, 11%, 0.91);
+  background-image: radial-gradient(
+      at 95% 11%,
+      hsla(197, 54%, 5%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 2% 58%, hsla(197, 54%, 5%, 1) 0px, transparent 50%),
+    radial-gradient(at 41% 24%, hsla(209, 56%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(208, 25%, 30%, 1) 0px, transparent 50%),
+    radial-gradient(at 6% 92%, hsla(208, 25%, 30%, 1) 0px, transparent 50%),
+    radial-gradient(at 95% 56%, hsla(209, 56%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(197, 54%, 5%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(208, 25%, 30%, 1) 0px, transparent 50%);
+  background-size: 150% 150%;
+  filter: blur(80px); */
+  /* animation: moveBackground 15s ease-in-out infinite; */
+  /* clip-path: polygon(32% 0, 100% 0, 100% 100%, 27% 100%); */
+}
+
+.bg .bg-news{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 561px;
+  height: 1080px;
+}
+
+.news h1,
+.news h2,
+.news h3,
+.news h4,
+.news h5 {
+  margin: 0;
+  line-height: normal;
+  padding: 0;
+}
+
+.news .item {
+  display: flex;
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  flex-direction: column;
+}
+
+.news .items {
+  padding-top: 168px;
+}
+
+.news .item .content {
+  display: flex;
+  padding-left: 100px;
+}
+
+.news .item .content .infobox {
+  width: 550px;
+  border-radius: 22px;
+  overflow: hidden;
+  background-color: var(--st-1t-color02);
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .item .content .infobox .image {
+  display: flex;
+  position: relative;
+}
+
+.news .item .content .infobox .image .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 41, 51, 0.55) 0%,
+    rgba(14, 26, 33, 0) 25%
+  );
+}
+
+.news .item .content .infobox .location,
+.news .item .content .infobox .date,
+.news .item .content .infobox .author {
+  display: flex;
+  font-size: 29px;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  color: var(--st-1t-color14);
+  min-width: 0;
+}
+
+.news .item .content .infobox .shadow {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.news .item .content .infobox .author {
+  align-items: center;
+  background-color: var(--st-1t-color13);
+  border-radius: 0;
+  padding: 22px 22px;
+  margin-top: 10px;
+  color: var(--st-1t-color11);
+}
+.news .item .content .infobox .author i {
+  margin-left: 10px;
+}
+
+.news .item .content .infobox i {
+  margin-right: 16px;
+}
+
+.news .item .content .infobox .date {
+  padding-left: 22px;
+  padding-top: 12px;
+  flex-grow: 1;
+}
+.news .item .content .infobox .date p {
+  padding: 10px 16px;
+  margin: 0;
+}
+
+.news .item .content .infobox .location {
+  padding-left: 22px;
+  padding-top: 14px;
+}
+
+.news .item .content .infobox .location p {
+  background-color: var(--st-1t-color02);
+  color: var(--st-1t-color01);
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.news .item .content .message {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 22px 0 0 22px;
+  overflow: hidden;
+  flex-grow: 1;
+  max-width: 1158px;
+  padding: 30px 96px 30px 42px;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: var(--st-1t-color02);
+  font-size: 37px;
+  display: inline-block;
+  container-type: inline-size;
+}
+
+.news .item .content .message .message-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  position: relative;
+}
+
+.news .item .content .message p {
+  margin: 20px 0;
+}
+
+.news .item .content .message h3 {
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  text-transform: uppercase;
+  font-family: "DIN 2014";
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.news .item .content .message h3.location {
+  background-color: var(--st-1t-color06);
+  color: var(--st-1t-color02);
+}
+
+.news .item .content .message h3.theme {
+  background-color: var(--st-1t-color13);
+  color: var(--st-1t-color14);
+}
+
+.news .item .content .message h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: var(--st-1t-color02);
+}
+
+.news .item .content .message a {
+  color: var(--st-1t-color02);
+  text-decoration: none;
+}
+
+.news .item .author .avatar {
+  display: inline-block;
+  border: 4px var(--st-1t-color01) solid;
+  border-radius: 50px;
+  height: 82px;
+  width: 83px;
+  margin-right: 16px;
+}
+
+.news .item .author .avatar img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  margin: 4px;
+}

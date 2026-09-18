@@ -1,0 +1,108 @@
+@import "./1T.VisualRadio.Fonts.css";
+@import "./1T.VisualRadio.Global.css";
+
+@import "./1T.VisualRadio.COM.News.css";
+@import "./1T.VisualRadio.COM.NowPlaying.css";
+@import "./1T.VisualRadio.COM.EPG.css";
+@import "./1T.VisualRadio.COM.Promo.css";
+@import "./1T.VisualRadio.COM.Weather.css";
+@import "./1T.VisualRadio.COM.Sports.css";
+
+@import "./1T.VisualRadio.COM.Ticker.css";
+
+@import "../plugins/font-awesome-pro/6.6.0/css/all.css";
+
+body {
+  /* cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=), none;
+  user-select: none; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg .bg-weather{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  clip-path: polygon(-100% 0%, 0% 0%, -13% 100%, -113% 100%);
+}
+
+@keyframes moveBackground {
+  0% {
+    background-size: 100% 100%;
+  }
+  10% {
+    background-size: 120% 80%;
+  }
+  20% {
+    background-size: 190% 140%;
+  }
+  30% {
+    background-size: 130% 110%;
+  }
+  40% {
+    background-size: 150% 120%;
+  }
+  50% {
+    background-size: 180% 100%;
+  }
+  60% {
+    background-size: 220% 80%;
+  }
+  70% {
+    background-size: 100% 50%;
+  }
+  80% {
+    background-size: 120% 70%;
+  }
+  90% {
+    background-size: 110% 90%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
+
+.pill {
+  text-align: right;
+  position: absolute;
+  top: 70px;
+  right: 96px;
+  background-color: var(--st-1t-color02);
+  border-radius: 40px;
+  padding: 20px 30px;
+  display: inline-block;
+}
+
+.pill h1,
+.pill h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  font-size: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--st-1t-color01);
+}
+
+.pill h1 {
+  font-family: "DIN 2014";
+  font-weight: bold;
+}
+
+.pill h2 {
+  font-family: "DIN 2014 Demi";
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.news, .weather, .nowplaying, .promo, .bg-news, .bg-weather, .epg {
+  /* display: none !important; */
+}
+
+/* .news, .weather, .nowplaying, .promo, .sports, .bg-news, .bg-weather {
+  display: none;
+} */

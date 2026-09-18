@@ -1,0 +1,81 @@
+.ticker-container {
+  opacity: 1;
+  position: absolute;
+  width: 1920px;
+  height: 62px;
+  bottom: 50px;
+  left: 100px;
+  overflow: hidden;
+  display: flex;
+  gap: 15px;
+}
+
+.ticker-container .clock {
+  width: 114px;
+  height: 62px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  line-height: 62px;
+  text-align: center;
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 34px;
+  color: var(--st-1t-color03);
+  background-color: var(--st-1t-color02);
+  border-radius: 5px;
+}
+
+.ticker-container .ticker {
+  position: relative;
+  width: 1920px;
+  height: 62px;
+  background-color: var(--st-1t-color03);
+  color: var(--st-1t-color02);
+  border-radius: 5px;
+  overflow: hidden;
+  flex-grow: 2;
+}
+
+.ticker-container .ticker .content .tick {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 1920px;
+  height: 62px;
+}
+.ticker-container .ticker .content .tick .icon {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 6px;
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.ticker-container .ticker .content .tickTemplate {
+  display: none;
+}
+
+.ticker-container .ticker .content .tick .icon img {
+  /* height: 32px;
+  width: 32px;
+  filter: drop-shadow(0px 2px 1px rgb(0 0 0 / 0.1)); */
+}
+
+.ticker-container .ticker .content .tick p {
+  display: block;
+  color: var(--st-1t-color02);
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0px;
+  padding-left: 50px;
+  padding-right: 0px;
+  white-space: nowrap;
+  line-height: 62px;
+  text-transform: uppercase;
+}

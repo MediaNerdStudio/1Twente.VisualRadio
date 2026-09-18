@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "DIN 2014 Narrow Extra";
+  src: url("../fonts/DIN2014-NarrowExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Narrow Demi";
+  src: url("../fonts/DIN2014-NarrowDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../fonts/DIN2014-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Narrow Extra";
+  src: url("../fonts/DIN2014-NarrowExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Narrow";
+  src: url("../fonts/DIN2014-NarrowLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Narrow";
+  src: url("../fonts/DIN2014-NarrowBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../fonts/DIN2014-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Extra";
+  src: url("../fonts/DIN2014-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../fonts/DIN2014-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Narrow";
+  src: url("../fonts/DIN2014-Narrow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Extra";
+  src: url("../fonts/DIN2014-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Extra";
+  src: url("../fonts/DIN2014-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Extra";
+  src: url("../fonts/DIN2014-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../fonts/DIN2014-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Demi";
+  src: url("../fonts/DIN2014-Demi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014 Demi";
+  src: url("../fonts/DIN2014-DemiItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../fonts/DIN2014-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../fonts/DIN2014-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

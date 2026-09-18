@@ -1,0 +1,286 @@
+/* SPORTS */
+
+:root{
+  --sport-row-height-01: 37px;
+  --sport-row-height-02: 40px;
+  --sport-team-logo-height-01: 29px;
+}
+
+/* .sports [data-league="Eredivisie"], */
+.sports [data-league="KKD"],
+.sports [data-league="VrouwenEredivisie"],
+.sports [data-league="TweedeDivisie"]
+{
+  display: none !important;
+} 
+
+.sports {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 95%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.bg-sport-soccer-eredivisie{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
+.sports .soccer {
+  display: flex;
+  align-items: center;
+}
+
+.sports .soccer .league {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
+  width: fit-content;
+  flex-grow: 1;
+  gap: 20px;
+  align-items: start;
+}
+
+
+.sports .soccer .league .page-header{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  grid-column: 1 / -1;
+}
+
+.sports .soccer .league .page-header h1,
+.sports .soccer .league .page-header h2{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  width: fit-content;
+}
+
+.sports .soccer .league .page-header h1{
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--st-1t-color02);
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  font-size: 3em;
+}
+
+.sports .soccer .league .page-header h2{
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: lowercase;
+  color: var(--st-1t-color02);
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  font-size: 3em;
+}
+
+.sports .soccer .league .page-header img{
+  height: 75px;
+  margin-right: 20px;
+}
+
+.sports .soccer .league .table[data-type="standings"] {
+  display: flex;
+  font-family: "DIN 2014 Demi";
+  font-size: 1.5em;
+  color: var(--st-1t-color02);
+  background-color: var(--st-1t-color25);
+  width: fit-content;
+  border-radius: 12px;
+  overflow: hidden;
+  grid-column: 1;
+}
+
+.sports .soccer .league .scoreboard{
+  grid-column: 2;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column{
+  width: fit-content;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column .team{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 4px 20px 4px 20px;
+  height: var(--sport-team-logo-height-01) !important;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column .team img{
+  height: var(--sport-team-logo-height-01);
+} 
+
+.sports .soccer .league .table[data-type="standings"] .column .header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--sport-row-height-01);
+  padding: 0 20px;
+  background-color: var(--st-1t-color01);
+}
+
+.sports .soccer .league .table[data-type="standings"] .column:first-child .header{
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column:not(:last-child){
+  border-right: 1px solid var(--st-1t-color26);
+}
+
+.sports .soccer .league .table[data-type="standings"] .column:last-child .header{
+  padding: 0 20px;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column .stat{
+  display: flex;
+  height: var(--sport-row-height-01);
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  color: var(--st-1t-color10);
+}
+
+.sports .soccer .league .table[data-type="standings"] .column:has(.team) .team-position {
+  width: 50px;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column:has(.team) .team-logo{
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sports .soccer .league .table[data-type="standings"] .column .stat:nth-child(odd),
+.sports .soccer .league .table[data-type="standings"] .column .team:nth-child(odd){
+  background-color: var(--st-1t-color17);
+}
+
+.sports .soccer .league .table[data-type="standings"] .team .team-logo{
+  width: 29px;
+  height: 29px;
+}
+
+.sports .soccer .league .scoreboard{
+  display: flex;
+  flex-direction: column;
+  width: 50em;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sports .soccer .league .scoreboard .matches{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--st-1t-color25);
+}
+
+
+.sports .soccer .league .scoreboard .header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--sport-row-height-02);
+  padding: 0 20px;
+
+  font-family: "DIN 2014 Demi";
+  font-size: 1em;
+  color: var(--st-1t-color02);
+  background-color: var(--st-1t-color01);
+}
+
+.sports .soccer .league .scoreboard .matches .match{
+  display: flex;
+  padding: 6px 0;
+}
+
+.sports .soccer .league .scoreboard .matches .match .team-logo{
+  width: 50px;
+  height: 50px;
+}
+
+.sports .soccer .league .scoreboard .matches .match:nth-child(odd){
+  background-color: var(--st-1t-color17);
+}
+
+.sports .soccer .league .scoreboard .matches .match h1,
+.sports .soccer .league .scoreboard .matches .match h2,
+.sports .soccer .league .scoreboard .matches .match h3{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  width: fit-content;
+}
+
+.sports .soccer .league .scoreboard .matches .match .team{
+  display: flex;
+  align-items: center;
+  width: 42%;
+  gap: 16px;
+}
+
+.sports .soccer .league .scoreboard .matches .match .team:first-child{
+  justify-content: flex-end;
+}
+
+.sports .soccer .league .scoreboard .matches .match .team:last-child{
+  justify-content: flex-start;
+}
+
+.sports .soccer .league .scoreboard .matches .match .team h1{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--st-1t-color02);
+}
+
+.sports .soccer .league .scoreboard .matches .match .team h1:first-child{
+  text-align: right;
+  padding-left: 10px;
+}
+
+.sports .soccer .league .scoreboard .matches .match .team h1:last-child{
+  text-align: left;
+  padding-right: 10px;
+}
+
+.sports .soccer .league .scoreboard .matches .match .status{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.sports .soccer .league .scoreboard .matches .match .status h2{
+  font-family: "DIN 2014 Demi";
+  font-size: 2em;
+  color: var(--st-1t-color02);
+  margin-top: -6px;
+}
+
+.sports .soccer .league .scoreboard .matches .match .status h3{
+  text-transform: lowercase;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--st-1t-color10);
+  height: 24px;
+}
+
+
+.sports .soccer .league .scoreboard .matches .match .team img{
+  height: 50px;
+  width: 50px;
+}

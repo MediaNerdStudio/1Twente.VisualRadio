@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url("../img/1T.BG.Gradient.01.png");
+    background-size: cover;
+}
+
+.content .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content .header img {
+    height: 50px;
+}
+
+.content h1 {
+    font-family: "DIN 2014";
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: var(--st-1t-color01);
+    margin: 0;
+    padding: 0;
+}
+
+
+.logwindow{
+    padding: 10px;
+    position: relative;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-size: 0.7em;
+    height: 480px;
+    text-align: left;
+    overflow-y: scroll;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logwindow p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.btn {
+    background-color: var(--st-1t-color01); /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .btn h3 {
+    font-family: "DIN 2014";
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--st-1t-color02);
+    margin: 10px 20px 10px 20px;
+    line-height: 16px;
+    padding: 0;
+  }

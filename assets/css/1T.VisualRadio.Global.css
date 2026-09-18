@@ -1,0 +1,43 @@
+:root {
+  --st-1t-color01: #e84127;
+  --st-1t-color02: white;
+  --st-1t-color03: #1e3542;
+  --st-1t-color04: #415c6a;
+  --st-1t-color05: #e1f1fa;
+  --st-1t-color06: #373737;
+  --st-1t-color07: #f17762;
+  --st-1t-color08: #fbe2df;
+  --st-1t-color09: #e7e7e7;
+  --st-1t-color10: #bcbcbc;
+  --st-1t-color11: #666666;
+  --st-1t-color12: #d92719;
+  --st-1t-color13: #f7f7f7;
+  --st-1t-color14: #a5a5a5;
+  --st-1t-color15: rgba(189, 189, 189, 0.2);
+  --st-11-color16: rgba(55, 55, 55, 0.2);
+  --st-1t-color17: hsla(0, 0%, 100%, 0.08);
+  --st-1t-color18: rgba(255, 255, 255, 0.05);
+  --st-1t-color19: rgba(0, 0, 0, 0.4);
+  --st-1t-color20: rgba(255, 255, 255, 0.8);
+  --st-1t-color21: #658191;
+  --st-1t-color22: rgba(255, 255, 255, 0.5);
+  --st-1t-color23: rgba(255, 255, 255, 0.9);
+  --st-1t-color24: rgba(30, 53, 66, 0.5);
+  --st-1t-color25: rgba(30, 53, 66, 0.7);
+  --st-1t-color26: rgba(255, 255, 255, 0.2);
+  --st-1t-color27: rgba(30, 53, 66, 0.9);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.canvas {
+  /* opacity: 1; */
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}

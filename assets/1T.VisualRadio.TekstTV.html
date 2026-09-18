@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1Twente O999 - Visual Radio</title>
+    <link rel="stylesheet" href="./css/1T.VisualRadio.TekstTV.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="bg" data-type="news">
+        <div class="texture"></div>
+        <div class="bg-news"><img src="./img/1T.VisualRadio.2025.Overlay.News.png"></div>
+        <div class="bg-weather"><img src="./img/weather/d000.jpg"></div>
+        <!-- <div class="bg-sport-soccer-eredivisie"><img src="./img/1T.BG.Sports.Soccer.Eredivisie.jpg"></div> -->
+      </div>
+
+      <!-- NEWS -->
+      <div class="news">
+        <div class="header">
+          <div class="pill">
+            <h1>Lees verder op</h1>
+            <h2>1Twente.nl</h2>
+          </div>
+        </div>
+        <div class="items"></div>
+      </div>
+
+      <!-- NOWPLAYING -->
+      <div class="nowplaying">
+        <div class="pill">
+          <h1>NowPlaying</h1>
+        </div>
+        <div class="current"></div>
+        <div class="previous">
+          <h1 class="header">
+            <img src="./img/1T.Icon.CD.svg" />Eerder gehoord
+          </h1>
+          <div class="songs"></div>
+        </div>
+      </div>
+
+      <!-- EPG | NOW -->
+      <div class="epg now">
+        <div class="bg_presenter">
+          <div class="image"></div>
+        </div>
+        <div class="pill">
+          <h1>gids</h1>
+        </div>
+        <div class="details">
+          <div class="time">
+            <div class="start">Nu op de radio</div>
+            <h3></h3>
+          </div>
+          <h1></h1>
+          <h2></h2>
+        </div>
+      </div>
+
+      <!-- EPG | NEXT -->
+      <div class="epg next">
+        <div class="bg_presenter">
+          <div class="image"></div>
+        </div>
+        <div class="pill">
+          <h1>gids</h1>
+        </div>
+        <div class="details">
+          <div class="time">
+            <div class="start">Straks op de radio</div>
+            <h3></h3>
+          </div>
+          <h1></h1>
+          <h2></h2>
+        </div>
+      </div>
+
+      <!-- EPG | LATER -->
+      <div class="epg later">
+        <div class="pill">
+          <h1>gids</h1>
+        </div>
+        <div class="details">
+          <div class="time">
+            <div class="start">Later te horen</div>
+          </div>
+          <div class="programs">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- PROMO -->
+      <div class="promo" data-type="app">
+        <div class="details">
+          <h1>Download de 1Twente-app</h1>
+          <p>Met de 1Twente-app heb je altijd en overal toegang<br>tot het laatste nieuws uit jouw regio.<br>Kijk en luister live naar 1Twente, blijf op de hoogte van het belangrijkste nieuws<br>en ontdek verdiepende reportages die ertoe doen.</p>
+          <p>Download de app nu gratis en mis niets!</p>
+          <h2>De 1Twente-app is beschikbaar op:</h2>
+          <div class="platforms">
+            <img src="./img/1T.AppStore.svg" />
+            <img src="./img/1T.GooglePlay.svg" />
+          </div>
+        </div>
+        <div class="phoneanimation">
+          <video src="./img/1T.AppPromo.iPhone.webm" muted></video>
+        </div>
+      </div>
+
+      <!-- WEATHER | CURRENT -->
+      <div class="weather current">
+        <div class="bg-box"></div>
+        <div class="pill">
+          <h2></h2><h1><img src="./img/1T.Icon.Weater.svg" height="28"> Weer</h1>
+        </div>
+        <div class="locations"></div>
+      </div>
+
+      <!-- WEATHER | FORECAST -->
+      <div class="weather forecast">
+        <div class="bg-box"></div>
+        <div class="pill">
+          <h2></h2><h1><img src="./img/1T.Icon.Weater.svg" height="28"> Weer</h1>
+        </div>
+        <div class="overview"></div>
+      </div>
+
+      <!-- SPORTS -->
+      <div class="sports">
+        <div class="pill">
+          <h1>Sport</h1>
+        </div>
+        <div class="soccer">
+          <div class="league" data-league="Eredivisie">
+            <div class="page-header">
+              <img src="./img/Logo.Eredivisie.White.svg">
+              <h1>VriendenLoterij Eredivisie</h1>
+            </div>
+            <div class="table" data-type="standings"></div>
+            <div class="scoreboard">
+              <div class="header">
+                <h1>Uitslagen</h1>
+              </div>
+              <div class="matches"></div>
+            </div>
+          </div>
+          <div class="league" data-league="KKD">
+            <div class="page-header">
+              <img src="./img/Logo.KeukenKampioenDivisie.svg">
+              <h1>KeukenKampioen Divisie</h1>
+            </div>
+            <div class="table" data-type="standings"></div>
+            <div class="scoreboard">
+              <div class="header">
+                <h1>Uitslagen</h1>
+              </div>
+              <div class="matches"></div>
+            </div>
+          </div>
+          <div class="league" data-league="VrouwenEredivisie">
+            <div class="page-header">
+              <img src="./img/Logo.EurojackpotVrouwenEredivisie.svg">
+              <h1>Eurojackpot VrouwenEredivisie</h1>
+            </div>
+            <div class="table" data-type="standings"></div>
+            <div class="scoreboard">
+              <div class="header">
+                <h1>Uitslagen</h1>
+              </div>
+              <div class="matches"></div>
+            </div>
+          </div>
+
+          <div class="league" data-league="TweedeDivisie">
+            <div class="page-header">
+              <img src="./img/Logo.TweedeDivisie.White.svg">
+              <!-- <h1>Tweede Divisie</h1> -->
+            </div>
+            <div class="table" data-type="standings"></div>
+            <div class="scoreboard">
+              <div class="header">
+                <h1>Uitslagen</h1>
+              </div>
+              <div class="matches"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TICKER -->
+      <div class="ticker-container">
+          <div class="clock"></div>
+          <div class="ticker">
+              <div class="content">
+                  <div class="tickTemplate">
+                      <span class="icon"><svg height="10" width="10" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="5" cx="5" cy="5" fill="white" />
+                      </svg></span><p>Dit is 1Twente</p>
+                  </div>
+              </div>
+          </div>          
+      </div>
+    </div>
+
+    <script src="/node_modules/requirejs/require.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '/node_modules',
+        paths: {
+          jquery: 'jquery/dist/jquery',
+          anime: 'animejs/dist/bundles/anime.umd',
+          io: 'socket.io-client/dist/socket.io.min',
+          luxon: 'luxon/build/amd/luxon'
+        }
+      });
+
+      requirejs(['jquery', 'anime', 'io', 'luxon'], function ($, anime, io, luxon) {
+        window.$ = window.jQuery = $;
+        window.anime = anime;
+        window.io = io;
+        window.luxon = luxon;
+
+        var s1 = document.createElement('script');
+        s1.src = './js/1T.VisualRadio.VisualRadio.Components.js';
+        document.body.appendChild(s1);
+
+        var s2 = document.createElement('script');
+        s2.src = './js/1T.VisualRadio.TekstTV.js';
+        document.body.appendChild(s2);
+      });
+    </script>
+  </body>
+</html>
+
+
+

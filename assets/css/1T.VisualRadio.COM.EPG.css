@@ -1,0 +1,175 @@
+.epg{
+  opacity: 0;
+}
+
+.epg .details {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  padding: 316px 0 0 100px;
+}
+
+.epg .details h1,
+.epg .details h2,
+.epg .details h3 {
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.epg .details .time {
+  display: flex;
+  line-height: 106px;
+}
+
+.epg .details .time .start {
+  border-radius: 106px;
+  padding: 0 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(232, 65, 39, 1) 0%,
+    rgba(252, 112, 67, 1) 100%
+  );
+}
+
+.epg .details .time h3 {
+  line-height: 106px;
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  font-size: 60px;
+  margin-left: 40px;
+  color: var(--st-1t-color02);
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.epg .details .time .start {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 64px;
+  color: var(--st-1t-color02);
+  text-transform: uppercase;
+}
+
+.epg .details h1 {
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 100px;
+  color: var(--st-1t-color02);
+  letter-spacing: -2px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.epg .details h2 {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--st-1t-color02);
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.epg.now,
+.epg.next{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.epg.later {
+  height: 100%;
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.epg.now .bg_presenter,
+.epg.next .bg_presenter {
+  position: absolute;
+  height: 100%;
+  width: 820px;
+  left: 970px;
+  clip-path: polygon(13% 0%, 100% 0%, 87% 100%, 0% 100%);
+}
+
+.epg.now .bg_presenter .image,
+.epg.next .bg_presenter .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+.epg.later .programs {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  mask-image: linear-gradient(90deg, black 80%, transparent);
+  mask-mode: alpha;
+}
+
+.epg.later .details {
+  max-width: 1820px;
+}
+
+.epg.later .programs .program {
+  position: relative;
+  min-width: 516px;
+  max-width: 516px;
+  height: 516px;
+  border-radius: 16px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.epg.later .programs .program .startEndTime {
+  display: flex;
+  flex-grow: 1;
+}
+
+.epg.later .programs .program .startEndTime h3{
+  margin: 0;
+  padding: 10px 16px;
+  line-height: normal;
+  font-size: 2em;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: var(--st-1t-color02);
+  font-family: "DIN 2014";
+}
+
+.epg.later .programs .program .startEndTime h3:first-child {
+  flex: 1;
+}
+
+.epg.later .programs .program .info{
+  padding: 0;
+  margin: 0;
+  padding: 16px;
+}
+
+
+.epg.later .programs .program .info h1,
+.epg.later .programs .program .info h2 {
+  padding: 0px;
+  margin: 0;
+  line-height: normal;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-kerning: none;
+  width: 100%;
+}
+
+.epg.later .programs .program .info h1{
+  font-size: 32px;
+  margin-bottom: -5px;
+}
+
+.epg.later .programs .program .info h2{
+  font-size: 22px;
+}

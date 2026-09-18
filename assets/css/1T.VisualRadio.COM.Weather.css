@@ -1,0 +1,427 @@
+.weather.current, .weather.forecast {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.weather .bg-box{
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  background-color: var(--st-1t-color24);
+}
+
+.weather .pill{
+  padding: 0;
+  background: transparent;
+}
+
+.weather .pill h1{
+  padding: 20px 30px;
+  background-color: var(--st-1t-color19);
+  border-radius: 40px;
+  color: var(--st-1t-color10);
+}
+.weather .pill h1 img{
+  margin-right: 10px;
+}
+
+.weather .pill h2{
+  margin-right: 20px;
+  color: var(--st-1t-color20);
+}
+
+.weather.current .locations{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.weather.current .locations .item{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 240px;
+  z-index: 10;
+}
+
+.weather.current .locations .item .hero {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  opacity: 0;
+}
+
+.weather.current .locations .item .hero img.heroIcon{
+  height: 500px;
+}
+
+.weather.current .locations .item .hero .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather.current .locations .item .hero .content h1{
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  font-size: 260px;
+  color: var(--st-1t-color02);
+  margin: 0;
+  padding: 0;
+  line-height: 260px;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+}
+
+
+.weather.current .locations .item .hero .content h2{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--st-1t-color02);
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  text-transform: lowercase;
+  margin-top: -24px;
+  margin-bottom: 30px;
+}
+
+.weather.current .locations .item .hero .content span.info{
+  display: flex;
+  align-items: center;
+}
+
+.weather.current .locations .item .hero .content h3.source,
+.weather.current .locations .item .hero .content h3.location{
+  font-family: "DIN 2014";
+  font-weight: 600;
+  font-size: 22px;
+  padding: 10px 24px;
+  margin: 0;
+  line-height: normal;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.weather.current .locations .item .hero .content h3.location{
+  display: flex;
+  align-items: center;
+  background-color: var(--st-1t-color02);  
+  color: var(--st-1t-color21);
+  border-radius: 30px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+}
+.weather.current .locations .item .hero .content h3.location i{
+  margin-right: 10px;
+}
+
+.weather.current .locations .item .hero .content h3.source{
+  font-size: 1.7em;
+  padding: 0px 16px;
+  color: var(--st-1t-color22);
+}
+
+
+.weather.current .locations .item .details{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--st-1t-color24);
+  border-radius: 15px;
+  margin-right: 100px;
+  opacity: 0;
+}
+
+.weather.current .locations .item .details .rain,
+.weather.current .locations .item .details .wind,
+.weather.current .locations .item .details .temperature{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.weather.current .locations .item .details .temperature{
+  margin-bottom: 20px;
+}
+
+.weather.current .locations .item .details .icon{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather.current .locations .item .details .rain .content h5,
+.weather.current .locations .item .details .wind .content h5,
+.weather.current .locations .item .details .temperature .content h5{
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  font-size: 34px;
+  color: var(--st-1t-color23);
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+}
+
+.weather.current .locations .item .details .rain{
+  margin-top: 20px;
+}
+
+.weather.current .locations .item .details .rain .content{
+  display: flex;
+  flex-direction: column;
+}
+
+.weather.current .locations .item .details .temperature small{
+  text-transform: uppercase;
+  font-size: 0.7em;
+  position: relative;
+  top: -6px;
+  margin-right: 10px;
+  color: var(--st-1t-color22);
+}
+
+.weather.current .locations .item .nextHour{
+  display: flex;
+  background-color: var(--st-1t-color18);
+  align-items: center;
+  border-top: 1px solid var(--st-1t-color24);
+}
+
+
+.weather.current .locations .item .nextHour span.time{
+  font-family: "DIN 2014";
+  font-weight: bold;
+  color: var(--st-1t-color02);
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: var(--st-1t-color26);
+  border-radius: 10px;
+  margin: 5px;
+  margin-right: 10px;
+}
+
+.weather.current .locations .item .nextHour span.temp{
+  font-family: "DIN 2014";
+  font-weight: bold;
+  color: var(--st-1t-color02);
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.weather.current .locations .item .nextHour span.type{
+  flex-grow: 1;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: var(--st-1t-color02);
+  flex-grow: 1;
+  padding: 0 30px;
+}
+
+.weather.current .locations .item .nextHour span.rain{
+  font-family: "DIN 2014";
+  font-weight: bold;
+  color: var(--st-1t-color02);
+  font-size: 14px;
+  margin-left: 5px;
+  flex-grow: 0;
+  gap:8px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+
+
+.weather.forecast{
+  position: relative;
+  
+}
+
+
+.weather.forecast .overview{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 150px;
+  box-sizing: border-box;
+}
+
+.weather.forecast .overview .week{
+  display: flex;
+  gap: 20px;
+}
+
+.weather.forecast .overview .week .day{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--st-1t-color27);
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  color: var(--st-1t-color02);
+  flex-grow: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.weather.forecast .overview h1,
+.weather.forecast .overview h2,
+.weather.forecast .overview h3,
+.weather.forecast .overview h4,
+.weather.forecast .overview h5{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.weather.forecast .overview .header h1,
+.weather.forecast .overview .source h1{
+  width: fit-content;
+}
+
+.weather.forecast .overview .header h1{
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--st-1t-color02);
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  font-size: 3em;
+}
+
+.weather.forecast .overview .source h1{
+  background-color: var(--st-1t-color26);
+  font-family: "DIN 2014";
+  font-weight: 600;
+  font-size: 22px;
+  padding: 10px 24px;
+  margin: 0;
+  line-height: normal;
+  width: fit-content;
+  text-transform: uppercase;
+  color: var(--st-1t-color22);
+  border-radius: 30px;
+}
+
+.weather.forecast .overview .week .day h1{
+  text-align: center;
+  background-color: var(--st-1t-color26);
+  line-height: 2em;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  width: 100%;
+}
+
+.weather.forecast .overview .week .day .temps{
+  width: 100%;
+  background-color: var(--st-1t-color18);
+}
+
+.weather.forecast .overview .week .day h2{
+  text-align: center;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  font-size: 6em;
+  line-height: 1.2em;
+}
+
+.weather.forecast .overview .week .day h3{
+  position: relative;
+  text-align: right;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  font-size: 3em;
+  margin-right: 20px;
+  margin-top: -50px;
+  color: var(--st-1t-color22);
+}
+
+.weather.forecast .overview .week .day h4{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  font-size: 2em;
+  color: var(--st-1t-color03);
+  text-transform: lowercase;
+  background-color: var(--st-1t-color02);
+  margin-bottom: 20px;
+}
+
+.weather.forecast .overview .week .day .windRain{
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0px 0px 3px rgba(125, 125, 125, 0.3);
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.weather.forecast .overview .week .day .windRain .rain{
+  display: flex;
+  border-bottom: 1px solid var(--st-1t-color19);
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 15px;
+  gap: 25px;
+}
+
+.weather.forecast .overview .week .day .windRain .rain .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.weather.forecast .overview .week .day .windRain .rain .info span:nth-child(2){
+  color: var(--st-1t-color22);
+}
+
+.weather.forecast .overview .week .day .windRain .wind{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.weather.forecast .overview .week .day .windRain .wind img{
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.weather.forecast .overview .week .day .windRain .wind h5{
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.8em;
+  line-height: 60px;
+}
+
+.weather.forecast .overview .week .day .windRain .wind h5 small{
+  width: fit-content;
+  height: fit-content;
+  font-size: 1em;
+  color: var(--st-1t-color22);
+}
+
+.weather.forecast .overview .week .day img.weatherSymbol{
+  margin-top: 20px;
+  
+}

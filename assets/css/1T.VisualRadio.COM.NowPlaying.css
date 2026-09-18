@@ -1,0 +1,200 @@
+.nowplaying {
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+}
+.nowplaying .current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 0 50px;
+  position: relative;
+}
+
+.nowplaying .current .artwork img {
+  width: 100%;
+  height: 100%;
+}
+
+.nowplaying .current .artwork {
+  width: 20em;
+  height: 20em;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.nowplaying .current .metadata {
+  margin-top: 20px;
+}
+
+.nowplaying .current .metadata h1,
+.nowplaying .current .metadata h2 {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  margin-left: 22px;
+  font-size: 4em;
+  color: var(--st-1t-color02);
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+.nowplaying .current .metadata h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.nowplaying .current .metadata h2 {
+  font-family: "Poppins";
+  font-weight: normal;
+}
+
+.nowplaying .previous {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.nowplaying .previous .songs {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.nowplaying .previous h1.header {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  color: var(--st-1t-color02);
+  width: 80%;
+  text-align: left;
+  line-height: 55px;
+  font-size: 36px;
+  display: inline-block;
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nowplaying .previous h1.header img {
+  width: 42px;
+  height: 42px;
+  margin-right: 8px;
+  position: relative;
+  top: 8px;
+}
+
+.nowplaying .previous .songs .song {
+  display: flex;
+  margin-top: 10px;
+  background-color: var(--st-1t-color17);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  align-items: center;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.nowplaying .previous .songs .song h1,
+.nowplaying .previous .songs .song h2,
+.nowplaying .previous .songs .song h3 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  color: var(--st-1t-color02);
+}
+
+.nowplaying .previous .songs .song h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  line-height: 1em;
+  text-wrap: nowrap;
+  width: 100%;
+}
+
+.nowplaying .previous .songs .song h2 {
+  font-family: "Poppins";
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+.nowplaying .previous .songs .song h3 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: 300;
+}
+
+.nowplaying .previous .song .artwork img {
+  width: 112px;
+  height: 112px;
+}
+
+.nowplaying .previous .artwork {
+  width: 112px;
+  height: 112px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+.nowplaying .current .position {
+  text-align: center;
+  width: 306px;
+  height: 158px;
+  background-image: url("../img/1T.O999.Number.BG.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -7em;
+  rotate: -10deg;
+  margin-left: -300px;
+  margin-bottom: -50px;
+  z-index: 11;
+}
+
+.nowplaying .current .position h1 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-family: "DIN 2014 Extra";
+  font-weight: bold;
+  font-size: 8em;
+  position: relative;
+  color: var(--st-1t-color01);
+}
+
+.nowplaying .current .position h1:nth-child(1) {
+  rotate: -5deg;
+}
+
+.nowplaying .current .position h1:nth-child(2) {
+  margin: 0 24px 0 28px;
+}
+
+.nowplaying .current .position h1:nth-child(3) {
+  top: 5px;
+  rotate: 9deg;
+}
+
+.nowplaying .previous .position {
+  width: 55px;
+  height: 30px;
+  border: 2.5px var(--st-1t-color02) solid;
+  border-radius: 5px;
+  font-family: "DIN 2014 Narrow Demi";
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--st-1t-color02);
+  line-height: 30px;
+  text-align: center;
+  margin-right: 16px;
+}

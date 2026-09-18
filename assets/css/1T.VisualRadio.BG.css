@@ -1,0 +1,424 @@
+.canvas.vertical {
+  width: 1080px;
+  height: 1920px;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/1Twente.BG.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticker {
+  width: 100%;
+  height: 140px;
+  margin: 0 auto;
+
+  white-space: nowrap;
+}
+.ticker .content {
+  display: inline-block;
+}
+
+.ticker .content .item-collection-1 {
+  position: relative;
+  left: 0%;
+}
+
+.ticker.rtl-20 .content {
+  animation: marq-rtl 20s linear infinite;
+}
+.ticker.rtl-20 .content .item-collection-1 {
+  animation: swap-rtl 20s linear infinite;
+}
+
+.ticker.rtl-40 .content {
+  animation: marq-rtl 40s linear infinite;
+}
+.ticker.rtl-40 .content .item-collection-1 {
+  animation: swap-rtl 40s linear infinite;
+}
+.ticker.rtl-60 .content {
+  animation: marq-rtl 60s linear infinite;
+}
+.ticker.rtl-60 .content .item-collection-1 {
+  animation: swap-rtl 60s linear infinite;
+}
+
+.ticker.rtl-90 .content {
+  animation: marq-rtl 90s linear infinite;
+}
+.ticker.rtl-90 .content .item-collection-1 {
+  animation: swap-rtl 90s linear infinite;
+}
+
+.ticker.rtl-120 .content {
+  animation: marq-rtl 120s linear infinite;
+}
+.ticker.rtl-120 .content .item-collection-1 {
+  animation: swap-rtl 120s linear infinite;
+}
+
+.ticker.rtl-180 .content {
+  animation: marq-rtl 180s linear infinite;
+}
+.ticker.rtl-180 .content .item-collection-1 {
+  animation: swap-rtl 180s linear infinite;
+}
+
+.ticker.ltr-20 .content {
+  animation: marq-ltr 20s linear infinite;
+}
+.ticker.ltr-20 .content .item-collection-1 {
+  animation: swap-ltr 20s linear infinite;
+}
+
+.ticker.ltr-40 .content {
+  animation: marq-ltr 40s linear infinite;
+}
+.ticker.ltr-40 .content .item-collection-1 {
+  animation: swap-ltr 40s linear infinite;
+}
+
+.ticker.ltr-60 .content {
+  animation: marq-ltr 60s linear infinite;
+}
+.ticker.ltr-60 .content .item-collection-1 {
+  animation: swap-ltr 60s linear infinite;
+}
+
+.ticker.ltr-90 .content {
+  animation: marq-ltr 90s linear infinite;
+}
+.ticker.ltr-90 .content .item-collection-1 {
+  animation: swap-ltr 90s linear infinite;
+}
+
+.ticker.ltr-120 .content {
+  animation: marq-ltr 120s linear infinite;
+}
+.ticker.ltr-120 .content .item-collection-1 {
+  animation: swap-ltr 120s linear infinite;
+}
+
+.ticker.ltr-180 .content {
+  animation: marq-ltr 180s linear infinite;
+}
+.ticker.ltr-180 .content .item-collection-1 {
+  animation: swap-ltr 180s linear infinite;
+}
+
+.ticker .content .item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 120px;
+  line-height: 140px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--st-1t-color07);
+  font-family: "Poppins";
+  font-weight: 900;
+}
+
+/* Transition */
+@keyframes marq-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marq-ltr {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes swap-rtl {
+  0%,
+  50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes swap-ltr {
+  0%,
+  50% {
+    left: 100%;
+  }
+  50.01%,
+  100% {
+    left: 0%;
+  }
+}
+
+.metadata {
+  position: absolute;
+  /* background-image: url("../img/1T.O999.Screen.V.05.png"); */
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.metadata .nowPlaying {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.8; */
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+.op-1 {
+  opacity: 1;
+}
+
+.metadata .nowPlaying .albumart {
+  border-radius: 60px;
+  overflow: hidden;
+  width: 472px;
+  height: 472px;
+  z-index: 10;
+}
+.metadata .nowPlaying .albumart img {
+  width: 100%;
+}
+
+.metadata .nowPlaying .info h1,
+.metadata .nowPlaying .info h2 {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  color: var(--st-1t-color02);
+}
+
+.metadata .nowPlaying .info h1 {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 5.1em;
+  line-height: 0.9em;
+}
+
+.metadata .nowPlaying .info h2 {
+  font-family: "DIN 2014";
+  font-weight: 300;
+  font-size: 5em;
+  line-height: 0.9em;
+  margin-top: 20px;
+}
+
+.metadata .nowPlaying .info {
+  position: relative;
+  background-color: var(--st-1t-color12);
+  padding: 70px 40px 40px 40px;
+  min-width: 480px;
+  text-align: center;
+  border-radius: 22px;
+  margin-top: -40px;
+  z-index: 0;
+}
+
+.metadata .nowPlaying .position {
+  text-align: center;
+  width: 306px;
+  height: 158px;
+  background-image: url("../img/1T.O999.Number.BG.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -7em;
+  rotate: -10deg;
+  margin-left: -410px;
+  margin-bottom: -50px;
+  z-index: 11;
+  opacity: 0;
+}
+
+.metadata .nowPlaying .position h1 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-family: "DIN 2014 Extra";
+  font-weight: bold;
+  font-size: 7.5em;
+  position: relative;
+  color: var(--st-1t-color01);
+}
+
+.metadata .nowPlaying .position h1:nth-child(1) {
+  rotate: -5deg;
+}
+
+.metadata .nowPlaying .position h1:nth-child(2) {
+  margin: 0 28px 0 24px;
+  rotate: 3deg;
+  top: -5px;
+}
+
+.metadata .nowPlaying .position h1:nth-child(3) {
+  top: 5px;
+  rotate: 8deg;
+}
+
+.metadata .EPG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.metadata .EPG .logo img {
+  width: 27em;
+}
+
+.metadata .EPG h1 {
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: 5em;
+  line-height: 1em;
+  margin-top: 1em;
+  color: var(--st-1t-color02);
+  margin: 1em 0.25em 0 0.25em;
+}
+
+.vertical .metadata {
+  flex-direction: column;
+}
+
+.vertical .metadata .nowPlaying,
+.vertical .metadata .EPG {
+  width: 100%;
+  height: 50%;
+}
+
+.vertical .metadata .nowPlaying {
+  padding-top: 8em;
+}
+.vertical .metadata .EPG {
+  position: relative;
+  top: -6em;
+}
+
+/* ========== VERTICAL 1 =================== */
+
+.vertical.video-1 .metadata .nowPlaying {
+  height: 50%;
+  justify-content: start;
+}
+
+.vertical.video-1 .metadata .nowPlaying .albumart,
+.vertical.video-2 .metadata .nowPlaying .albumart {
+  width: 370px;
+  height: 370px;
+  border-radius: 60px;
+}
+
+.vertical.video-1 .metadata .nowPlaying .position,
+.vertical.video-2 .metadata .nowPlaying .position {
+  width: 180px;
+  height: 112px;
+  margin-top: -5em;
+  margin-left: -315px;
+  margin-bottom: -50px;
+}
+
+.vertical.video-1 .metadata .nowPlaying .info h1,
+.vertical.video-2 .metadata .nowPlaying .info h1 {
+  font-size: 4em;
+  line-height: 0.7em;
+}
+
+.vertical.video-1 .metadata .nowPlaying .info h2,
+.vertical.video-2 .metadata .nowPlaying .info h2 {
+  font-size: 4em;
+  line-height: 0.7em;
+  margin-top: 20px;
+}
+
+.vertical.video-1 .metadata .nowPlaying .info,
+.vertical.video-2 .metadata .nowPlaying .info {
+  border-radius: 20px;
+  margin-top: -40px;
+  padding: 70px 40px 30px 40px;
+  min-width: 364px;
+}
+
+.vertical.video-1 .metadata .nowPlaying .position h1,
+.vertical.video-2 .metadata .nowPlaying .position h1 {
+  font-size: 4.8em;
+  top: -0.15em;
+}
+
+.vertical.video-1 .metadata .nowPlaying .position h1:nth-child(2),
+.vertical.video-2 .metadata .nowPlaying .position h1:nth-child(2) {
+  margin: 0 16px 0 14px;
+}
+
+.vertical.video-1 .metadata .nowPlaying .position h1:nth-child(3),
+.vertical.video-2 .metadata .nowPlaying .position h1:nth-child(3) {
+  top: -0.1em;
+}
+
+.vertical.video-1 .EPG .logo {
+  margin-top: 24em;
+}
+
+.vertical.video-1 .metadata .EPG h1 {
+  font-size: 4em;
+}
+
+/* ========== VERTICAL 2 =================== */
+.vertical.video-2 .EPG {
+  display: none;
+}
+
+.vertical.video-2 .metadata .nowPlaying {
+  height: 100%;
+  justify-content: center;
+}
+
+/* ========== VERTICAL 3 =================== */
+
+.vertical.video-3 .EPG {
+  display: none;
+}
+
+.vertical.video-3 .metadata .nowPlaying {
+  height: 100%;
+  justify-content: center;
+  margin-top: 65em;
+  scale: 0.85 0.85;
+}
+
+.clean {
+  display: none;
+}
